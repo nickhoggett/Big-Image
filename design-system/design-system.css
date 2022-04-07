@@ -1,0 +1,250 @@
+/* ----------------- */
+/* CUSTOM PROPERTIES */
+/* ----------------- */
+
+:root {
+    /* COLOURS */
+
+    /* red */
+
+    --redHex: #f50000;
+    --redHSL: 0, 100%, 48%;
+    --redRGB: 245, 0, 0;
+
+    --greyHex: #808080;
+    --greyHSL: 57, 0%, 50%;
+    --greyRGB: 128, 128, 128;
+
+    --lightgreyHex: #cccccc;
+    --lightgreyHSL: 57, 0%, 80%;
+    --lightgreyRGB: 204, 204, 204;
+ 
+
+
+    /* FONT-SIZES */
+    --fs-900: 7rem;
+    --fs-800: 3.5rem;
+    --fs-700: 2.5rem;
+    --fs-600: 1.75rem;
+    --fs-500: 1.5rem;
+    --fs-400: 1.2rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /* FONT-FAMILIES */
+
+    --ff-angkor: 'Angkor', cursive;
+    --ff-elite: 'Special Elite', cursive;
+    --ff-marcellus:'Marcellus', serif;
+
+}
+
+
+/* ----------------- */
+/*      RESET        */
+/* ----------------- */
+
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+} 
+
+/* RESET MARGINS */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* setup body */
+
+body {
+    background-color: auto;
+    font-family: var(--ff-marcellus);
+    font-size: var(--fs-300);
+    font-weight: 600;
+    line-height: 1.2;
+    min-height: 100vh;
+
+}
+/* MAKE IMAGES EASIER TO WORK WITH */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* MAKE FORM ELEMENTS EASIER TO WORK WITH */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* REMOVES ANIMATIONS FOR PEOPLER WHO'VE TURNED THEM OFF */
+
+@media (prefers-rediced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* ----------------- */
+/*      ULTILITIES   */
+/* ----------------- */
+
+.container {
+    max-width: 80rem;
+    padding-inline: 2em;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.flow > * + *{
+    margin-top: var(--flow-space, 1rem);
+}
+
+/* Background-colours */
+
+.bg-red-hex {
+    background-color: var(--redHex);
+}
+.bg-red-hsl {
+    background-color: hsl(var(--redHSL));
+}
+.bg-red-rgb {
+    background-color: rgb(var(--redRGB));
+}
+
+.bg-grey-hex {
+    background-color: var(--greyHex);
+}
+.bg-grey-hsl {
+    background-color: hsl(var(--greyHSL));
+}
+.bg-grey-rgb {
+    background-color: rgb(var(--greyRGB));
+}
+
+.bg-lightgrey-hex {
+    background-color: var(--lightgreyHex);
+}
+.bg-lightgrey-hsl {
+    background-color: hsl(var(--lightgreyHSL));
+}
+.bg-lightgrey-rgb {
+    background-color: rgb(var(--lightgreyRGB));
+}
+/* Text-colours */
+
+.text-red {
+    color: var(--redHex);
+}
+.text-grey {
+    color: var(--greyHex);
+}
+.text-lightgrey {
+    color: var(--lightgreyHex);
+}
+
+
+/* Typography */
+
+.ff-angkor {
+    font-family: var(--ff-angkor);
+}
+.ff-elite {
+    font-family: var(--ff-elite);
+}
+.ff-marcellus {
+    font-family: var(--ff-marcellus);
+}
+
+/* Font sizes */
+
+.fs-900 {
+    font-size: var(--fs-900);
+}
+.fs-800 {
+    font-size: var(--fs-800);
+}
+.fs-700 {
+    font-size: var(--fs-700);
+}
+.fs-600 {
+    font-size: var(--fs-600);
+}
+.fs-500 {
+    font-size: var(--fs-500);
+}
+.fs-400 {
+    font-size: var(--fs-400);
+}
+.fs-300 {
+    font-size: var(--fs-300);
+}
+.fs-200 {
+    font-size: var(--fs-200);
+}
+ 
+/* To uppercase */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* ----------------- */
+/*      COMPONENTS   */
+/* ----------------- */
+
+.numbered-title {
+    font-family: var(--ff-elite);
+    font-size: var(--fs-600);
+    letter-spacing: 2.35px;
+    margin-bottom: 1rem;
+    font-weight: 550;
+  }
+  .numbered-title span {
+    color: var(--greyHex);
+    padding-right: 20px;
+    font-weight: 500;
+  }
+
+/* ----------------- */
+/*    MEDIA QUERIES  */
+/* ----------------- */

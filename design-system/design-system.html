@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design-system.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Marcellus&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <title>My Site | Design System</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="fs-900 ff-angkor text-red">Design System</h1>
+        <section id="colour-scheme">
+            <h2 class="numbered-title"><span class="">01</span>Colours</h2>
+            <div class="flex">
+                <div class="flow " style="flex-grow: 1; --flow-space: 0.5rem">
+                    <div class="bg-red-rgb fs-500" style="padding: 3rem 1rem 1rem; border: 1px solid black">
+                        #f50000
+                    </div>
+                    <p><span class="">RGB</span> 245, 0, 0</p>
+                    <p><span class="">HSL</span> 0°, 100%, 48%</p>
+                </div>
+                <div class="flow" style="flex-grow: 1; --flow-space: 0.5rem">
+                    <div class="bg-grey-rgb fs-500" style="padding: 3rem 1rem 1rem; border: 1px solid black">
+                        #808080
+                    </div>
+                    <p><span class="">RGB</span> 128, 128, 128</p>
+                    <p><span class="">HSL</span> 57°, 0%, 50%</p>
+                </div>
+                <div class="flow" style="flex-grow: 1; --flow-space: 0.5rem">
+                    <div class=" bg-lightgrey-rgb fs-500" style="padding: 3rem 1rem 1rem; border: 1px solid black">
+                        #cccccc
+                    </div>
+                    <p><span class="">RGB</span> 204, 204, 204</p>
+                    <p><span class="">HSL</span> 57°, 0%, 0%</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="typography" style="margin: 4rem 0;">
+            <h2 class="numbered-title"><span>02</span>Typography</h2>
+            <div class="flex">
+                <div class="flow" style="flex-basis: 100%">
+                    <div>
+                        <p class="text-grey ff-marcellus fs-500">'Angkor', cursive - 7rem
+                            fs-900
+                        </p>
+                        <p class="ff-angkor fs-900 text-red">Header 1</p>
+                    </div>
+                    <div>
+                        <p class="text-grey ff-marcellus fs-500">'Angkor', cursive - 3.5rem fs-800
+                        </p>
+                        <p class="ff-angkor text-red fs-800">Header 2</p>
+                    </div>
+                    <div>
+                        <p class="text-grey ff-macrellus fs-500">'Angkor', cursive - 2.5rem fs-700
+                        </p>
+                        <p class="ff-angkor text-grey fs-700">Header 3</p>
+                    </div>
+                    <div>
+                        <p class="text-grey ff-marcellus fs-500">'Special Elite', cursive - 1.75rem fs-600
+                        </p>
+                        <p class="ff-elite fs-600"> Header 4</p>
+                    </div>
+                    <div>
+                        <p class="text-grey ff-marcellus fs-500">'Marcellus', sarif - 1.5rem fs-500
+
+                        </p>
+                        <p class="text-grey ff-marcellus fs-500">Header 5</p>
+                    </div>
+                </div>
+
+
+                <div class=" flow" style="flex-basis: 100%">
+                    <div>
+                        <p class="text-grey ff-marcellus fs-500">'Special Elite', cursive - 1.5rem fs-500
+                        </p>
+                        <p class="ff-elite fs-700">Subheader 1</p>
+                    </div>
+                    <div>
+                        <p class="text-grey ff-marcellus fs-500">'Special Elite', cursive - 1.5rem fs-500
+                        </p>
+                        <p class="ff-elite fs-500">Subheading 2</p>
+                    </div>
+                    <div>
+                        <p class="text-grey ff-marcellus fs-500">'Special Elite', cursive - 1.5rem fs-600
+                        </p>
+                        <p class="ff-elite fs-500">Navigation text</p>
+                    </div>
+                    <div>
+                        <p class="uppercase">body text
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur sapiente quae tempore
+                            magnam, atque dolorem ipsum, modi numquam voluptatum quidem corporis quo saepe voluptate
+                            aliquam aut, dicta odit vero similique! Lorem ipsum dolor sit amet consectetur,
+                            adipisicing
+                            elit. Vel pariatur repudiandae eius! Quam, nisi distinctio labore quaerat, nam
+                            consequatur,
+                            autem tempore adipisci eos ipsum laudantium? Voluptatum natus eligendi saepe molestiae!
+                        </p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur sapiente quae tempore
+                            magnam, atque dolorem ipsum, modi numquam voluptatum quidem corporis quo saepe voluptate
+                            aliquam aut, dicta odit vero similique! Lorem ipsum dolor sit amet consectetur,
+                            adipisicing
+                            elit. Vel pariatur repudiandae eius! Quam, nisi distinctio labore quaerat, nam
+                            consequatur,
+                            autem tempore adipisci eos ipsum laudantium? Voluptatum natus eligendi saepe molestiae!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="flow" id="form-elements" style="margin: 4rem 0;">
+            <h2 class="numbered-title"><span>03</span>FormElements</h2>
+            <div class="flow" style="flex-basis: 100%;">
+                <form action="submit">
+                    <input type="text">
+                    <input type="submit">
+                    <input type="checkbox" name="example check" id="#">
+                    <input type="button" value="example">
+                    <label for="this">example label</label>
+                    <select>
+                        <option value="value1">example 1</option>
+                        <option value="value1">example 2</option>
+                        <option value="value1">example 3</option>
+                        <option value="value1">example 4</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
